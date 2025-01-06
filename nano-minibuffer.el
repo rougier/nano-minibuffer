@@ -159,8 +159,7 @@
   (setq mini-frame-internal-border-color (face-foreground 'nano-faded))
   (setq mini-frame-resize-min-height 3)
   
-  ;; This does not work unless it is set via customize-variable
-  (setq mini-frame-resize t)
+  (customize-set-variable 'mini-frame-resize t)
 
   (add-hook 'minibuffer-setup-hook #'nano-minibuffer-setup)
   (mini-frame-mode 1))
